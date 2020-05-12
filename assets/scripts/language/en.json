@@ -1,0 +1,32 @@
+{
+    "saludo": "Hi, my name is José. I...",
+    "lenguaje": "Language:",
+    "about": [
+        "am a Full-Stack Web Developer.", "am a young who loves to program.", "have 2+  years’ experience.", "solve problems"
+    ],
+    "contactame": "GET IN TOUCH",
+    "experiencia_titulo": "My experience",
+    "experiencia_detalle": "2+ years’ experience as Software Developer.",
+    "worksectiontitle": "Work Experience",
+    "worksectionDet": "Here are few of my work experience",
+    "visitar_website": "VISIT WEBSITE",
+
+    "artexacta_desc": "I worked as a consultant (2018-2020) focused entrely on web development. My mains functions were:",
+    "artexacta_1": "Technical support searching errors and develop software fixes for internal systems developed by Artexacta.",
+    "artexacta_2": "Developed new functionalities required by the clients.",
+    "artexacta_3": "Collaborated with the creation of new modules for a human resources system.",
+    "artexacta_4": "Developed a Sales Management System.",
+
+    "megasystem_desc": "I worked with a freelancer contract, the activities that I developed in this company are:",
+    "megasystem_1": "Developed a data synchronization system using Angular 8 (frontend) and Web Api c# (backend).",
+    "megasystem_2": "Collaborated with the creation of new functionalities for an invoicing system.",
+
+    "networking_desc": "Networking Consulting is a digital marketing company, I worked with a freelancer contract, the activities that I developed in this company are:",
+    "networking_1": "Developed business websites with corporate emails using PHP and MySQL.",
+
+    "objetivo_title": "Professional objective",
+    "objetivo_desc": "Give the maximum work performance to meet the objectives of the company, gain more experience to grow as a professional and never stop learning.",
+    "trabajar_title": "Would you like to work with me?",
+    "trabajar_desc": "I'm currently available for work.",
+    "comenzar": "START NOW"
+}

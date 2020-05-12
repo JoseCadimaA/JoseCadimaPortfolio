@@ -1,4 +1,57 @@
 const Portfolio = function() {
+
+    var language;
+
+    function getLanguage() {
+        (localStorage.getItem('language') == null) ? setLanguage('en'): false;
+        console.log('hola');
+        $.ajax({
+            url: 'assets/scripts/language/' + localStorage.getItem('language') + '.json',
+            dataType: 'json',
+            async: false,
+            dataType: 'json',
+            success: function(lang) { language = lang }
+
+        });
+    }
+
+    function setLanguage(lang) {
+        localStorage.setItem('language', lang);
+    }
+
+    function LoadElements() {
+        getLanguage();
+        console.log(language);
+        $('#saludo_text').text(language.saludo);
+        $('#lenguaje_text').text(language.lenguaje);
+        $('#contactame_text').text(language.contactame);
+        $('#ExperienceTitle').text(language.experiencia_titulo);
+        $('#ExperienceDet').text(language.experiencia_detalle);
+
+        $('#worksectiontitle').text(language.worksectiontitle);
+        $('#worksectionDet').text(language.worksectionDet);
+        $('.visitar_website').text(language.visitar_website);
+
+        $('#artexacta_desc').text(language.artexacta_desc);
+        $('#artexacta_1').text(language.artexacta_1);
+        $('#artexacta_2').text(language.artexacta_2);
+        $('#artexacta_3').text(language.artexacta_3);
+        $('#artexacta_4').text(language.artexacta_4);
+        $('#megasystem_desc').text(language.megasystem_desc);
+        $('#megasystem_1').text(language.megasystem_1);
+        $('#megasystem_2').text(language.megasystem_2);
+        $('#networking_desc').text(language.networking_desc);
+        $('#networking_1').text(language.networking_1);
+
+        $('#objetivo_title').text(language.objetivo_title);
+        $('#objetivo_desc').text(language.objetivo_desc);
+        $('#trabajar_title').text(language.trabajar_title);
+        $('#trabajar_desc').text(language.trabajar_desc);
+        $('#comenzar').text(language.comenzar);
+
+
+    }
+
     function makeWords() {
         var words = [{
             text: "Angular",
@@ -57,9 +110,7 @@ const Portfolio = function() {
 
     function typeAnimation() {
         Typed.new("#writing-text", {
-            strings: [
-                "soy un Full-Stack Web Developer.", "soy un jóven que ama programar.", "cuento con 2 años de experiencia.", "doy solución a cualquier problema."
-            ],
+            strings: language.about,
             // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
             stringsElement: null,
             // typing speed
@@ -74,12 +125,14 @@ const Portfolio = function() {
     }
 
     return {
+        LoadElements: LoadElements,
+        setLanguage: setLanguage,
         displayWordCloud: displayWordCloud,
         typeAnimation: typeAnimation
     }
 
 }();
 
-
+Portfolio.LoadElements();
 Portfolio.displayWordCloud();
 Portfolio.typeAnimation();

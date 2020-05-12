@@ -1,0 +1,32 @@
+{
+    "saludo": "Hola, mi nombre es José. Yo...",
+    "lenguaje": "Lenguaje:",
+    "about": [
+        "soy un Full-Stack Web Developer.", "soy un jóven que ama programar.", "cuento con 2 años de experiencia.", "doy solución a cualquier problema."
+    ],
+    "contactame": "CONTACTAME",
+    "experiencia_titulo": "Mi experiencia",
+    "experiencia_detalle": "2+ años de experiencia como Desarrollador de Software.",
+    "worksectiontitle": "Formación Profesional",
+    "worksectionDet": "Conoce un poco de mi formación como Profesional.",
+    "visitar_website": "VISITAR SITIO WEB",
+
+    "artexacta_desc": "Trabajé como consultor (2018-2020) enfocado en su totalidad al desarrollo web, he aquí algunas de mis funciones:",
+    "artexacta_1": "Soporte técnico, busqueda de errores y desarrollo de soluciones para sistemas desarrollados por Artexacta.",
+    "artexacta_2": "Desarrollo de todos los nuevos requerimientos solicitados por los clientes.",
+    "artexacta_3": "Colaboración con la creación de nuevos módulos para un sistema de Recursos Humanos.",
+    "artexacta_4": "Desarrollé un sistema de gestión de ventas.",
+
+    "megasystem_desc": "Empresa para la cuál brindo mis servicios de Freelancer. Las actividades que desarrollé en esta empresa son:",
+    "megasystem_1": "Desarrollé un sistema de sincronización de datos, usando Angular 8 como Front-end y Web Api c# como Back-end. Esto para resolver un problema de sucursales y datos diferentes.",
+    "megasystem_2": "Colaboré con la creación de nuevas funcionalidades del sistema de Facturación de MegaSystem.",
+
+    "networking_desc": "Networking Consulting es una empresa de Marketing Digital con los que trabajé como Freelancer. La actividad que desarrollé para esta empresa es:",
+    "networking_1": "Desarrollo de Sitios Web empresariales con correos coorporativos, usando PHP y MySQL.",
+
+    "objetivo_title": "Objetivo profesional",
+    "objetivo_desc": "Dar siempre el máximo desempeño laboral para cumplir con los objetivos de la empresa, ganar mayor experiencial para crecer como profesional y por sobre todo nunca dejar de APRENDER.",
+    "trabajar_title": "Te gustaría trabajar conmigo?",
+    "trabajar_desc": "Actualmente me encuentro disponible para trabajar.",
+    "comenzar": "COMENZAR AHORA"
+}

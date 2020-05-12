@@ -38,15 +38,23 @@
                 <div class="small-12 large-8 large-offset-2 columns text-center">
                     <div class="profile-photo" style="background-image: url(assets/images/profile.png);">
                     </div>
+                    <div>
+                        <b id="lenguaje_text"></b>
+                        <a href="http://josecadima.networkingscz.com/" onclick="Portfolio.setLanguage('en')">English</a>
+                        <b> | </b>
+                        <a href="http://josecadima.networkingscz.com/" onclick="Portfolio.setLanguage('es')">Spanish</a>
+                    </div>
+                    <br>
+                    <br>
                     <div class="details">
-                        <h2>Hola, mi nombre es José. Yo...<br> <span id="writing-text"><span></h2>
+                        <h2><span id="saludo_text"></span><br> <span id="writing-text"><span></h2>
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row">				
 				<div class="small-12 column">
 					<div class="cta text-center">
-						<a class="my-button cta-button expand form-button" href="mailto:jose75684847@gmail.com">Contactame</a>
+						<a id="contactame_text" class="my-button cta-button expand form-button" href="mailto:jose75684847@gmail.com"></a>
 					</div>
 				</div>
 				<div class="small-12 column">
@@ -66,8 +74,8 @@
 
 			<div class="row column">
 				<div class="small-12">
-					<h2 class="text-center">Mi experiencia</h2>
-					<p class="text-center tag-line">+2 años de experiencia como Desarrollador de Software.</p>
+					<h2 class="text-center" id="ExperienceTitle"></h2>
+					<p class="text-center tag-line" id="ExperienceDet"></p>
 				</div>
 			</div>
 			<div class="row">
@@ -113,10 +121,10 @@
 					<i class="fi-comments"></i>
 					<h3>Inglés</h3>
 					<ul>
-						<li>Lectura:AVANZADO</li>
-						<li>Escritura:AVANZADO</li>
-						<li>Auditivo:INTERMEDIO/AVANZADO</li>
-						<li>Oral:BAJO/INTERMEDIO</li>						
+						<li>Listening:Intermediate/Advanced.</li>
+						<li>Reading:Advanced</li>
+						<li>Writing:Intermediate</li>
+						<li>Speaking:Low/Intermediate</li>
 					</ul>
 				</div>
 			</div>
@@ -124,9 +132,9 @@
 		</section>
 
 		<section id="work">
-			<h2 class="text-center">Formación Profesional</h2>
+			<h2 class="text-center" id="worksectiontitle"></h2>
 			<div class="row">
-				<p class="text-center tag-line">Conoce un poco de mi formación como Profesional.</p>
+				<p class="text-center tag-line" id="worksectionDet"></p>
 			</div>
 
 
@@ -140,13 +148,15 @@
 						<h3>Artexacta SRL</h3>
 						<p class="platform">Web (Asp.Net C#, SQL Server, HTML, Javascript, Jquery, Bootstrap)</p>
 						<p class="icons"><i class="fi-monitor"></i></p>
-						<p>Trabajé como consultor (2018-2020) enfocado en su totalidad al desarrollo web, he aquí algunas de mis funciones:</p>
+						<p id="artexacta_desc"></p>
 						<ul>
-							<li>Soporte técnico a sistemas desarrollados por la empresa.</li>
-							<li>Desarrollo de todos los nuevos requerimientos solicitados por los clientes. Esto incluye funcionalidades, nuevos modulos y un sistema nuevo.</li>
+							<li id="artexacta_1"></li>
+							<li id="artexacta_2"></li>
+							<li id="artexacta_3"></li>
+							<li id="artexacta_4"></li>
 						</ul>						
 						<br>
-						<a class="my-button" target="_blank" href="https://www.artexacta.com/">Visitar Sitio Web</a>
+						<a class="my-button visitar_website" target="_blank" href="https://www.artexacta.com/"></a>
 					</div>
 				</div>
 			</div>
@@ -161,12 +171,13 @@
 						<h3>MegaSystem</h3>
 						<p class="platform">Web (Web API 2 C#, MySQL, Angular, Typescript, HTML, CSS)</p>
 						<p class="icons"><i class="fi-monitor"></i></p>
-						<p>Empresa para la cuál brindo mis servicios de Freelancer por requerimientos. La actividad que desarrollo en esta empresa es:</p>
+						<p id="megasystem_desc"></p>
 						<ul>
-							<li>Desarrollo de una Web App, cuyo objetivo principal es obtener los datos del sistema de facturación (de escritorio), analizarlos, sincronizarlos y almacenarlos en la nube.</li>
+							<li id="megasystem_1"></li>
+							<li id="megasystem_2"></li>
 						</ul>						
 						<br>
-						<a class="my-button" target="_blank" href="https://www.megasystem.com.bo/">Visitar Sitio Web</a>
+						<a class="my-button visitar_website" target="_blank" href="https://www.megasystem.com.bo/"></a>
 					</div>
 				</div>
 			</div>
@@ -181,16 +192,13 @@
 						<h3>Networking Consulting</h3>
 						<p class="platform">Web (PHP, MySQL, HTML, CSS, JAVASCRIPT, BOOTSTRAP, JQUERY)</p>
 						<p class="icons"><i class="fi-monitor"></i></p>
-						<p>
-							Networking es una empresa dedicada al rubro del Marketing Digital a la que le 
-							he brindado mis servicios como Freelancer. 
-							La actividad que desarrollo para esta empresa es:
+						<p id="networking_desc">
 						</p>
 						<ul>
-							<li>Desarrollo de Sitios Web empresariales para sus clientes, lo que a su ves incluye correo coorporativos.</li>
+							<li id="networking_1"></li>
 						</ul>
 						<br>
-						<a class="my-button" target="_blank" href="http://www.networkingscz.com/">Visitar sitio web</a>
+						<a class="my-button visitar_website" target="_blank" href="http://www.networkingscz.com/"></a>
 					</div>
 				</div>
 			</div>
@@ -206,13 +214,10 @@
 		</section>
 
 		<section id="teaching">
-			<h2 class="text-center">Objetivo profesional</h2>
+			<h2 class="text-center" id="objetivo_title"></h2>
 			<div class="row">
 				<div class="small-12 medium-8 medium-offset-2">
-					<p class="text-center tag-line">
-						Dar siempre el máximo desempeño laboral para cumplir con los 
-						objetivos de la empresa, ganar mayor experiencial para crecer como profesional 
-						y por sobre todo nunca dejar de APRENDER.
+					<p class="text-center tag-line" id="objetivo_desc">						
 					</p>
 				</div>
 			</div>
@@ -225,14 +230,14 @@
 		</section>
 
 		<section id="footer-cta">
-			<h2 class="text-center">Te gustaría trabajar conmigo?</h2>
+			<h2 class="text-center" id="trabajar_title"></h2>
 			<p></p>
 			<div class="row text-center">
 				<div class="small-12 medium-8 medium-offset-2 columns">
-					<p class="text-center">Actualmente me encuentro disponible para trabajar.</p>
+					<p class="text-center" id="trabajar_desc"></p>
 				</div>
 				<div class="small-12 columns" id="startButtonDiv">
-					<a class="my-button form-button" href="mailto:jose75684847@gmail.com">Comenzar ahora</a>
+					<a class="my-button form-button" href="mailto:jose75684847@gmail.com" id="comenzar"></a>
 				</div>
 			</div>
 		</section>
